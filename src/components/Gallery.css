@@ -1,0 +1,672 @@
+/* =========================================
+   KAYAKALP MAKEOVER
+   UNIQUE BRIDAL COLLAGE GALLERY
+========================================= */
+
+.gallery-section {
+  position: relative;
+  background: #fffdfc;
+  padding: 110px 55px 100px;
+  overflow: hidden;
+}
+
+.gallery-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   DECORATION
+========================================= */
+
+.gallery-decoration {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #c98787;
+  border-radius: 50%;
+  top: 55px;
+  right: -60px;
+  opacity: 0.35;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 65px;
+}
+
+.gallery-label {
+  color: #a0525a;
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+.gallery-heading h2 {
+  margin: 0;
+  max-width: 600px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 0.98;
+  font-weight: 400;
+  color: #302124;
+}
+
+.gallery-heading h2 span {
+  display: block;
+  color: #99515a;
+  margin-top: 8px;
+}
+
+.gallery-intro {
+  max-width: 400px;
+  margin: 0 20px 5px 0;
+  color: #53627a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   COLLAGE
+========================================= */
+
+.gallery-collage {
+  display: grid;
+
+  grid-template-columns:
+    1.05fr
+    0.85fr
+    0.85fr
+    1.05fr;
+
+  grid-template-rows:
+    270px
+    270px
+    270px;
+
+  gap: 16px;
+
+  position: relative;
+}
+
+
+/* =========================================
+   COLLAGE POSITIONS
+========================================= */
+
+/* 01 — Large left portrait */
+.gallery-card:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+/* 02 — Top center-left */
+.gallery-card:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* 03 — Top center-right */
+.gallery-card:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* 04 — Large right portrait */
+.gallery-card:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+
+/* 05 — Middle center-left */
+.gallery-card:nth-child(5) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* 06 — Large center-right */
+.gallery-card:nth-child(6) {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+}
+
+/* 07 — Bottom left */
+.gallery-card:nth-child(7) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+/* 08 — Bottom center-left */
+.gallery-card:nth-child(8) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* 09 — Bottom right */
+.gallery-card:nth-child(9) {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #f8efed;
+  min-width: 0;
+  min-height: 0;
+  box-shadow: 0 12px 35px rgba(72, 35, 40, 0.08);
+}
+
+
+/* Individual positions */
+
+.gallery-large:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.gallery-tall:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.gallery-medium:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.gallery-small:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+
+.gallery-medium:nth-child(5) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.gallery-tall:nth-child(6) {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+}
+
+.gallery-large:nth-child(7) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.gallery-medium:nth-child(8) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.gallery-small:nth-child(9) {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+
+  transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.78);
+}
+
+/* =========================================
+   INDIVIDUAL BRIDAL PHOTO POSITIONING
+========================================= */
+
+/* bridal-1 */
+.gallery-card:nth-child(1) img {
+  object-position: center center;
+}
+
+/* bridal-2 - close-up bride */
+.gallery-card:nth-child(2) img {
+  object-position: center 35%;
+}
+
+/* bridal-3 - standing bride */
+.gallery-card:nth-child(3) img {
+  object-position: center center;
+}
+
+/* bridal-4 */
+.gallery-card:nth-child(4) img {
+  object-position: center center;
+}
+
+/* bridal-5 */
+.gallery-card:nth-child(5) img {
+  object-position: center 30%;
+}
+
+/* bridal-6 */
+.gallery-card:nth-child(6) img {
+  object-position: center 30%;
+}
+
+/* bridal-7 */
+.gallery-card:nth-child(7) img {
+  object-position: center center;
+}
+
+/* bridal-8 */
+.gallery-card:nth-child(8) img {
+  object-position: center 30%;
+}
+
+/* bridal-9 */
+.gallery-card:nth-child(9) img {
+  object-position: center center;
+}
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.gallery-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 28px 24px 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  background: linear-gradient(
+    to top,
+    rgba(35, 20, 23, 0.88),
+    rgba(35, 20, 23, 0)
+  );
+
+  color: white;
+
+  opacity: 0;
+  transform: translateY(12px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-overlay span {
+  display: block;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 7px;
+
+  color: #f6dada;
+}
+
+.gallery-overlay h3 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.gallery-arrow {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #99515a;
+
+  font-size: 20px;
+}
+
+
+/* =========================================
+   CENTER BADGE
+========================================= */
+
+.gallery-center-badge {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 145px;
+  height: 145px;
+
+  border-radius: 50%;
+
+  background: #99515a;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 35px rgba(100, 42, 48, 0.25);
+
+  z-index: 5;
+
+  border: 8px solid rgba(255, 253, 252, 0.9);
+}
+
+.gallery-center-badge span {
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.gallery-center-badge strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.gallery-center-badge small {
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.gallery-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 55px;
+
+  gap: 30px;
+}
+
+.gallery-bottom p {
+  margin: 0;
+
+  color: #53627a;
+  font-size: 15px;
+}
+
+
+.gallery-instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 15px 25px;
+
+  border: 1px solid #a0525a;
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  color: #99515a;
+
+  font-size: 15px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.gallery-instagram-btn span {
+  font-size: 18px;
+}
+
+.gallery-instagram-btn:hover {
+  background: #99515a;
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .gallery-section {
+    padding: 85px 30px;
+  }
+
+  .gallery-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .gallery-intro {
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .gallery-collage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 260px);
+  }
+
+  .gallery-large:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .gallery-tall:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .gallery-medium:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .gallery-small:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .gallery-medium:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .gallery-tall:nth-child(6) {
+    grid-column: 1;
+    grid-row: 4 / span 2;
+  }
+
+  .gallery-large:nth-child(7) {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .gallery-medium:nth-child(8) {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .gallery-small:nth-child(9) {
+    display: none;
+  }
+
+  .gallery-center-badge {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gallery-center-badge strong {
+    font-size: 21px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .gallery-section {
+    padding: 70px 20px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 48px;
+  }
+
+  .gallery-intro {
+    font-size: 14px;
+  }
+
+  .gallery-collage {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows:
+      230px
+      230px
+      230px
+      230px
+      230px;
+
+    gap: 12px;
+  }
+
+  .gallery-card {
+    border-radius: 17px;
+  }
+
+  .gallery-large:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .gallery-tall:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .gallery-medium:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .gallery-small:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .gallery-medium:nth-child(5) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .gallery-tall:nth-child(6) {
+    grid-column: 2;
+    grid-row: 4 / span 2;
+  }
+
+  .gallery-large:nth-child(7) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .gallery-medium:nth-child(8),
+  .gallery-small:nth-child(9) {
+    display: none;
+  }
+
+  .gallery-center-badge {
+    width: 105px;
+    height: 105px;
+
+    border-width: 5px;
+  }
+
+  .gallery-center-badge strong {
+    font-size: 17px;
+  }
+
+  .gallery-center-badge span {
+    font-size: 6px;
+  }
+
+  .gallery-center-badge small {
+    font-size: 5px;
+  }
+
+  .gallery-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+
+  .gallery-instagram-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
