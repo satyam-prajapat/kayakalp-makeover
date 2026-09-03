@@ -238,7 +238,7 @@ function Hero() {
               }}
             >
               <motion.img
-                src="/src/assets/images/bridal-1.jpg"
+                src="/images/bridal-1.jpg"
                 alt="KAYAKALP MAKEOVER Bridal Look"
                 className="w-full h-[480px] sm:h-[550px] md:h-[600px] object-cover"
                 initial={{ scale: 1.12 }}

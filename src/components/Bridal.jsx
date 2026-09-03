@@ -138,7 +138,7 @@ function Bridal() {
               >
 
                 <motion.img
-                  src="/src/assets/images/bridal-2.jpg"
+                  src="/images/bridal-2.jpg"
                   alt="KAYAKALP MAKEOVER Bridal Makeup"
                   className="w-full h-[480px] sm:h-[550px] lg:h-[650px] object-cover"
                   initial={{

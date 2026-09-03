@@ -55,7 +55,7 @@ function About() {
               className="relative z-10 rounded-[30px] overflow-hidden shadow-xl"
             >
               <motion.img
-                src="/src/assets/images/bridal-7.jpg"
+                src="/images/bridal-7.jpg"
                 alt="KAYAKALP MAKEOVER Bridal Look"
                 className="w-full h-[500px] sm:h-[560px] object-cover"
                 initial={{ scale: 1.15 }}
